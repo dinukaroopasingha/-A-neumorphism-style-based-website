@@ -1,0 +1,251 @@
+.nav {
+    height: 10vh;
+    width: 100vw;
+    /* background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1)); */
+    background-color: black;
+    /* color: blue; */
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.navbtn {
+    width: 100px
+}
+
+.menu-toggler {
+    align-self: center;
+}
+
+.logo {
+    float: left;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    width: 15%;
+    max-width: 250px;
+    height: auto;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    align-self: center;
+    padding-top: 10px;
+}
+
+.nav2 {
+    border-radius: 0 0 30% 30%;
+    width: 100vw;
+    height: 100px;
+    background-color: white;
+    box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+#icon-body {
+    justify-content: flex-end;
+}
+
+#navbarNav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#navbarNav ul li {
+    list-style: none;
+}
+
+#navbarNav ul li a {
+    height: 40px;
+    line-height: 50px;
+    padding: 0 30px 20px 30px;
+    text-decoration: none;
+}
+
+navbar {
+    width: 100vw;
+}
+
+.borderLeftRight {
+    display: inline-block;
+    position: relative;
+    /* background: linear-gradient(to right, #457fca, #5691c8); */
+    background: #ececec;
+}
+
+.borderLeftRight::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #ececec;
+    /* background: linear-gradient(to right, #457fca, #5691c8); */
+    transform-origin: bottom right;
+    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+    border-color: none;
+    text-decoration: bold;
+}
+
+.borderLeftRight:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    /* filter: invert(100%); */
+}
+
+#icon {
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center
+}
+
+
+/* <----------facebook-------------> */
+
+.radiusPulsefb {
+    /* padding: 15px; */
+    position: relative;
+}
+
+.radiusPulsefb::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    background-color: #3b5998;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform .3s cubic-bezier(.215, .61, .355, 1);
+}
+
+.radiusPulsefb::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    /* border: 2px solid #3b5998; */
+    border-radius: 50%;
+    transform: scale(1);
+    opacity: 1;
+    transition: opacity .3s cubic-bezier(.215, .61, .355, 1), transform .3s cubic-bezier(.215, .61, .355, 1);
+}
+
+.radiusPulsefb:hover::before {
+    transform: scale(1);
+}
+
+.radiusPulsefb:hover::after {
+    transform: scale(1);
+    opacity: 0;
+}
+
+
+/* <----------youtube-------------> */
+
+.radiusPulseyt {
+    /* padding: 15px; */
+    position: relative;
+}
+
+.radiusPulseyt::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    background-color: #FF0000;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform .3s cubic-bezier(.215, .61, .355, 1);
+}
+
+.radiusPulseyt::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    /* border: 2px solid #FF0000; */
+    border-radius: 50%;
+    transform: scale(1);
+    opacity: 1;
+    transition: opacity .3s cubic-bezier(.215, .61, .355, 1), transform .3s cubic-bezier(.215, .61, .355, 1);
+}
+
+.radiusPulseyt:hover::before {
+    transform: scale(1);
+}
+
+.radiusPulseyt:hover::after {
+    transform: scale(1);
+    opacity: 0;
+}
+
+
+/* .wrapper-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 20rem 1fr) 100px;
+    justify-content: center;
+} */
+
+.navbar-nav {
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-image {
+    background-image: url(metalworker.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    filter: opacity(20%) blur(5px);
+}
+
+#myCarousel {
+    width: 100vw;
+    height: auto;
+    z-index: 0;
+}
+
+.boder {
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(219, 219, 219);
+}

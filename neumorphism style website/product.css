@@ -1,0 +1,94 @@
+/* main section {
+    background-color: whitesmoke;
+    box-shadow: 6px 6px 12px #eeeff0, -6px -6px 12px #ffffff;
+    -webkit-box-shadow: 6px 6px 12px #eeeff0, -6px -6px 12px #ffffff;
+} */
+
+#card {
+    border-radius: 30px 30px 10px 10px;
+    /* border-radius: 30px; */
+    background: white;
+    border: none;
+    /* background: #f8f8ff; */
+    box-shadow: 6px 6px 13px #d0d0d6, -6px -6px 13px #ffffff;
+    align-items: center;
+    border: white;
+}
+
+#card div h5 {
+    height: 48px;
+}
+
+#card-img {
+    margin-top: 2.3%;
+    border-radius: 20px 20px 2px 2px;
+    width: 95%;
+    height: 95%;
+}
+
+#card-btn {
+    width: fit-content;
+    height: fit-content;
+    background-color: #6050dc;
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: rgb(163, 177, 198) 1.5px 1.5px 3px 0px, rgb(255, 255, 255) -1.5px -1.5px 3px 0px;
+    -webkit-box-shadow: rgba(163, 177, 198, 0.5) 1.5px 1.5px 3px 0px, rgb(255, 255, 255) -1.5px -1.5px 3px 0px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-content: center;
+    display: flex;
+    border: 2px solid rgb(159, 149, 236);
+}
+
+#card-btn:hover {
+    width: fit-content;
+    height: fit-content;
+    box-shadow: rgba(163, 177, 198, 0.5) 1px 1px 2px 0px, rgb(255, 255, 255) -1px -1px 2px 0px;
+    -webkit-box-shadow: rgba(163, 177, 198, 0.5) 1px 1px 2px 0px, rgb(255, 255, 255) -1px -1px 2px 0px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#card-btn a {
+    color: #f8f8ff;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.btn-group {
+    display: flex;
+}
+
+
+
+#img {
+    z-index: 100;
+    position: absolute;
+    background-repeat: no-repeat;
+    /* width: 380px;
+    height: 310px; */
+    background-image: url(./automation.png);
+    /* background-size: 400px 310px;
+    background-position: 35% 60%; */
+}
+
+#img-overlayer {
+    z-index: 1;
+    
+}
+
+p {
+    color: #898989;
+}
+
+h5 {
+    color: #2c2c2c;
+}
+
+footer {}
